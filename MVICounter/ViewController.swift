@@ -9,12 +9,14 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    @IBOutlet private weak var counterLabel: UILabel!
+    @IBOutlet private weak var incrementButton: UIButton!
+    @IBOutlet private weak var decrementButton: UIButton!
+    @IBOutlet private weak var resetButton: UIButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
     }
-
-
 }
 
