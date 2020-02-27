@@ -14,6 +14,8 @@
 		344BEF0B24079E1800B5C2B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 344BEF0A24079E1800B5C2B8 /* Assets.xcassets */; };
 		344BEF0E24079E1800B5C2B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 344BEF0C24079E1800B5C2B8 /* LaunchScreen.storyboard */; };
 		344BEF1924079E1800B5C2B8 /* MVICounterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344BEF1824079E1800B5C2B8 /* MVICounterTests.swift */; };
+		3D1496E87E4F41D0C1ABFA15 /* Pods_MVICounter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD86A8A5AB4745BC3755F67F /* Pods_MVICounter.framework */; };
+		658ABA850CA78B87096D26F7 /* Pods_MVICounterTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7326D4EA7E635DCBD23DD0CE /* Pods_MVICounterTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,12 @@
 		344BEF1424079E1800B5C2B8 /* MVICounterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MVICounterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		344BEF1824079E1800B5C2B8 /* MVICounterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVICounterTests.swift; sourceTree = "<group>"; };
 		344BEF1A24079E1800B5C2B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7326D4EA7E635DCBD23DD0CE /* Pods_MVICounterTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MVICounterTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		793D73318217F2BCFCBA15B9 /* Pods-MVICounterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVICounterTests.release.xcconfig"; path = "Target Support Files/Pods-MVICounterTests/Pods-MVICounterTests.release.xcconfig"; sourceTree = "<group>"; };
+		7B16C7F813A40C9121EB955B /* Pods-MVICounter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVICounter.debug.xcconfig"; path = "Target Support Files/Pods-MVICounter/Pods-MVICounter.debug.xcconfig"; sourceTree = "<group>"; };
+		840BFE9BFB4F57D11ED41453 /* Pods-MVICounter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVICounter.release.xcconfig"; path = "Target Support Files/Pods-MVICounter/Pods-MVICounter.release.xcconfig"; sourceTree = "<group>"; };
+		A4CB5480BAE2EF7E38CA36BA /* Pods-MVICounterTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVICounterTests.debug.xcconfig"; path = "Target Support Files/Pods-MVICounterTests/Pods-MVICounterTests.debug.xcconfig"; sourceTree = "<group>"; };
+		DD86A8A5AB4745BC3755F67F /* Pods_MVICounter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MVICounter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D1496E87E4F41D0C1ABFA15 /* Pods_MVICounter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,18 +61,42 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				658ABA850CA78B87096D26F7 /* Pods_MVICounterTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		06AF04A7C5379A1EA3CE4DE6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DD86A8A5AB4745BC3755F67F /* Pods_MVICounter.framework */,
+				7326D4EA7E635DCBD23DD0CE /* Pods_MVICounterTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		11940E267BD003350A32E15B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7B16C7F813A40C9121EB955B /* Pods-MVICounter.debug.xcconfig */,
+				840BFE9BFB4F57D11ED41453 /* Pods-MVICounter.release.xcconfig */,
+				A4CB5480BAE2EF7E38CA36BA /* Pods-MVICounterTests.debug.xcconfig */,
+				793D73318217F2BCFCBA15B9 /* Pods-MVICounterTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		344BEEF524079E1700B5C2B8 = {
 			isa = PBXGroup;
 			children = (
 				344BEF0024079E1700B5C2B8 /* MVICounter */,
 				344BEF1724079E1800B5C2B8 /* MVICounterTests */,
 				344BEEFF24079E1700B5C2B8 /* Products */,
+				11940E267BD003350A32E15B /* Pods */,
+				06AF04A7C5379A1EA3CE4DE6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -106,9 +139,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 344BEF1D24079E1800B5C2B8 /* Build configuration list for PBXNativeTarget "MVICounter" */;
 			buildPhases = (
+				2CAB656E00F7A5012C6B71B2 /* [CP] Check Pods Manifest.lock */,
 				344BEEFA24079E1700B5C2B8 /* Sources */,
 				344BEEFB24079E1700B5C2B8 /* Frameworks */,
 				344BEEFC24079E1700B5C2B8 /* Resources */,
+				347D5504D4173114204C02D9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -123,9 +158,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 344BEF2024079E1800B5C2B8 /* Build configuration list for PBXNativeTarget "MVICounterTests" */;
 			buildPhases = (
+				C0CD875EF894E1A8951F7EEF /* [CP] Check Pods Manifest.lock */,
 				344BEF1024079E1800B5C2B8 /* Sources */,
 				344BEF1124079E1800B5C2B8 /* Frameworks */,
 				344BEF1224079E1800B5C2B8 /* Resources */,
+				8A50913EC423B8B4E9E600D4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -194,6 +231,87 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2CAB656E00F7A5012C6B71B2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MVICounter-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		347D5504D4173114204C02D9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MVICounter/Pods-MVICounter-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MVICounter/Pods-MVICounter-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MVICounter/Pods-MVICounter-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8A50913EC423B8B4E9E600D4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MVICounterTests/Pods-MVICounterTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MVICounterTests/Pods-MVICounterTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MVICounterTests/Pods-MVICounterTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C0CD875EF894E1A8951F7EEF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MVICounterTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		344BEEFA24079E1700B5C2B8 /* Sources */ = {
@@ -360,6 +478,7 @@
 		};
 		344BEF1E24079E1800B5C2B8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B16C7F813A40C9121EB955B /* Pods-MVICounter.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -378,6 +497,7 @@
 		};
 		344BEF1F24079E1800B5C2B8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 840BFE9BFB4F57D11ED41453 /* Pods-MVICounter.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -396,6 +516,7 @@
 		};
 		344BEF2124079E1800B5C2B8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4CB5480BAE2EF7E38CA36BA /* Pods-MVICounterTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -418,6 +539,7 @@
 		};
 		344BEF2224079E1800B5C2B8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 793D73318217F2BCFCBA15B9 /* Pods-MVICounterTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
