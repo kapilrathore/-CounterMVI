@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,10 @@
 		344BEF0B24079E1800B5C2B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 344BEF0A24079E1800B5C2B8 /* Assets.xcassets */; };
 		344BEF0E24079E1800B5C2B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 344BEF0C24079E1800B5C2B8 /* LaunchScreen.storyboard */; };
 		344BEF1924079E1800B5C2B8 /* MVICounterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344BEF1824079E1800B5C2B8 /* MVICounterTests.swift */; };
+		344BEF262407A47600B5C2B8 /* CounterIntentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344BEF252407A47600B5C2B8 /* CounterIntentions.swift */; };
+		344BEF282407A52600B5C2B8 /* CounterState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344BEF272407A52600B5C2B8 /* CounterState.swift */; };
+		344BEF2A2407A60500B5C2B8 /* CounterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344BEF292407A60500B5C2B8 /* CounterModel.swift */; };
+		344BEF2C2407CA1D00B5C2B8 /* CounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 344BEF2B2407CA1D00B5C2B8 /* CounterView.swift */; };
 		3D1496E87E4F41D0C1ABFA15 /* Pods_MVICounter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD86A8A5AB4745BC3755F67F /* Pods_MVICounter.framework */; };
 		658ABA850CA78B87096D26F7 /* Pods_MVICounterTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7326D4EA7E635DCBD23DD0CE /* Pods_MVICounterTests.framework */; };
 /* End PBXBuildFile section */
@@ -40,6 +44,10 @@
 		344BEF1424079E1800B5C2B8 /* MVICounterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MVICounterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		344BEF1824079E1800B5C2B8 /* MVICounterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVICounterTests.swift; sourceTree = "<group>"; };
 		344BEF1A24079E1800B5C2B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		344BEF252407A47600B5C2B8 /* CounterIntentions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterIntentions.swift; sourceTree = "<group>"; };
+		344BEF272407A52600B5C2B8 /* CounterState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterState.swift; sourceTree = "<group>"; };
+		344BEF292407A60500B5C2B8 /* CounterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterModel.swift; sourceTree = "<group>"; };
+		344BEF2B2407CA1D00B5C2B8 /* CounterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterView.swift; sourceTree = "<group>"; };
 		7326D4EA7E635DCBD23DD0CE /* Pods_MVICounterTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MVICounterTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		793D73318217F2BCFCBA15B9 /* Pods-MVICounterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVICounterTests.release.xcconfig"; path = "Target Support Files/Pods-MVICounterTests/Pods-MVICounterTests.release.xcconfig"; sourceTree = "<group>"; };
 		7B16C7F813A40C9121EB955B /* Pods-MVICounter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVICounter.debug.xcconfig"; path = "Target Support Files/Pods-MVICounter/Pods-MVICounter.debug.xcconfig"; sourceTree = "<group>"; };
@@ -85,7 +93,6 @@
 				A4CB5480BAE2EF7E38CA36BA /* Pods-MVICounterTests.debug.xcconfig */,
 				793D73318217F2BCFCBA15B9 /* Pods-MVICounterTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -112,13 +119,12 @@
 		344BEF0024079E1700B5C2B8 /* MVICounter */ = {
 			isa = PBXGroup;
 			children = (
-				344BEF0124079E1700B5C2B8 /* AppDelegate.swift */,
-				344BEF0324079E1700B5C2B8 /* SceneDelegate.swift */,
+				344BEF252407A47600B5C2B8 /* CounterIntentions.swift */,
+				344BEF272407A52600B5C2B8 /* CounterState.swift */,
+				344BEF292407A60500B5C2B8 /* CounterModel.swift */,
 				344BEF0524079E1700B5C2B8 /* ViewController.swift */,
-				344BEF0724079E1700B5C2B8 /* Main.storyboard */,
-				344BEF0A24079E1800B5C2B8 /* Assets.xcassets */,
-				344BEF0C24079E1800B5C2B8 /* LaunchScreen.storyboard */,
-				344BEF0F24079E1800B5C2B8 /* Info.plist */,
+				344BEF2B2407CA1D00B5C2B8 /* CounterView.swift */,
+				344BEF232407A45400B5C2B8 /* Files */,
 			);
 			path = MVICounter;
 			sourceTree = "<group>";
@@ -130,6 +136,19 @@
 				344BEF1A24079E1800B5C2B8 /* Info.plist */,
 			);
 			path = MVICounterTests;
+			sourceTree = "<group>";
+		};
+		344BEF232407A45400B5C2B8 /* Files */ = {
+			isa = PBXGroup;
+			children = (
+				344BEF0124079E1700B5C2B8 /* AppDelegate.swift */,
+				344BEF0324079E1700B5C2B8 /* SceneDelegate.swift */,
+				344BEF0724079E1700B5C2B8 /* Main.storyboard */,
+				344BEF0A24079E1800B5C2B8 /* Assets.xcassets */,
+				344BEF0C24079E1800B5C2B8 /* LaunchScreen.storyboard */,
+				344BEF0F24079E1800B5C2B8 /* Info.plist */,
+			);
+			path = Files;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -319,6 +338,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				344BEF0624079E1700B5C2B8 /* ViewController.swift in Sources */,
+				344BEF282407A52600B5C2B8 /* CounterState.swift in Sources */,
+				344BEF2A2407A60500B5C2B8 /* CounterModel.swift in Sources */,
+				344BEF2C2407CA1D00B5C2B8 /* CounterView.swift in Sources */,
+				344BEF262407A47600B5C2B8 /* CounterIntentions.swift in Sources */,
 				344BEF0224079E1700B5C2B8 /* AppDelegate.swift in Sources */,
 				344BEF0424079E1700B5C2B8 /* SceneDelegate.swift in Sources */,
 			);
@@ -483,7 +506,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TMG254D42M;
-				INFOPLIST_FILE = MVICounter/Info.plist;
+				INFOPLIST_FILE = MVICounter/Files/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -502,7 +525,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TMG254D42M;
-				INFOPLIST_FILE = MVICounter/Info.plist;
+				INFOPLIST_FILE = MVICounter/Files/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
