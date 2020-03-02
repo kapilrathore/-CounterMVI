@@ -11,7 +11,6 @@ import RxSwift
 import RxCocoa
 
 class ViewController: UIViewController {
-    
     @IBOutlet private weak var counterLabel: UILabel!
     @IBOutlet private weak var incrementButton: UIButton!
     @IBOutlet private weak var decrementButton: UIButton!
@@ -19,7 +18,6 @@ class ViewController: UIViewController {
     @IBOutlet private weak var intervalStepper: UIStepper!
     @IBOutlet private weak var intervalLabel: UILabel!
     
-    private let counterModel = CounterModel()
     private lazy var intentions: CounterIntentions = {
         return CounterIntentions(
             incrementButton.rx.tap.asObservable(),
@@ -29,6 +27,7 @@ class ViewController: UIViewController {
         )
     }()
     private let states = BehaviorSubject(value: CounterState(count: 0, interval: 1))
+    private let counterModel = CounterModel()
     private let disposeBag = DisposeBag()
 
     override func viewDidLoad() {

@@ -27,7 +27,7 @@ class CounterModel {
         )
     }
     
-    func incrementUsecase(
+    private func incrementUsecase(
         _ intention: CounterIntentions,
         _ states: Observable<CounterState>
     ) -> Observable<CounterState> {
@@ -38,7 +38,7 @@ class CounterModel {
             }
     }
     
-    func decrementUsecase(
+    private func decrementUsecase(
         _ intention: CounterIntentions,
         _ states: Observable<CounterState>
     ) -> Observable<CounterState> {
@@ -49,7 +49,7 @@ class CounterModel {
             }
     }
     
-    func resetUsecase(
+    private func resetUsecase(
         _ intention: CounterIntentions,
         _ states: Observable<CounterState>
     ) -> Observable<CounterState> {
@@ -60,7 +60,7 @@ class CounterModel {
             }
     }
     
-    func intervalChangeUsecase(
+    private func intervalChangeUsecase(
         _ intention: CounterIntentions,
         _ states: Observable<CounterState>
     ) -> Observable<CounterState> {
